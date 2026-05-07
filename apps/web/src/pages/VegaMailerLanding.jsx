@@ -317,18 +317,18 @@ const VegaMailerLanding = () => {
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
                     <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d=\"M5 13l4 4L19 7\" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2\">No Per-Email Costs</h4>
-                    <p className="text-sm text-muted-foreground\">Send unlimited emails. You only pay for the platform, not per message.</p>
+                    <h4 className="font-semibold text-foreground mb-2">No Per-Email Costs</h4>
+                    <p className="text-sm text-muted-foreground">Send unlimited emails. You only pay for the platform, not per message.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
                     <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round\" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
                   </div>
                   <div>
@@ -380,13 +380,13 @@ const VegaMailerLanding = () => {
             <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-6 rounded-2xl bg-card border border-primary/20">
               <div className="flex-1 text-left">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl font-bold text-primary\">Save up to 80%</span>
-                  <span className="px-2 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-medium\">vs SendGrid/Mailchimp</span>
+                  <span className="text-2xl font-bold text-primary">Save up to 80%</span>
+                  <span className="px-2 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-medium">vs SendGrid/Mailchimp</span>
                 </div>
-                <p className="text-sm text-muted-foreground\">Pay for the platform, not per email. Perfect for high-volume senders.</p>
+                <p className="text-sm text-muted-foreground">Pay for the platform, not per email. Perfect for high-volume senders.</p>
               </div>
-              <Button className="bg-primary hover:bg-primary/90\" asChild>
-                <a href=\"/contact\">Get Custom Quote</a>
+              <Button className="bg-primary hover:bg-primary/90" asChild>
+                <a href="/contact">Get Custom Quote</a>
               </Button>
             </div>
           </motion.div>
