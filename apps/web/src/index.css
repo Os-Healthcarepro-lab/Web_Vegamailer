@@ -84,9 +84,41 @@
     text-wrap: balance;
   }
   .glass-nav {
-    @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
+    @apply bg-background/95 backdrop-blur-lg border-b border-white/5;
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
   }
   .hero-gradient {
     background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+  
+  /* Animated gradient text */
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+  
+  /* Hover glow effect */
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Card hover lift */
+  .card-lift {
+    @apply transition-transform duration-300;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
   }
 }
