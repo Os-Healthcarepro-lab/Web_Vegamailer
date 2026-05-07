@@ -51,7 +51,7 @@ router.post('/', strictRateLimit, honeypot('website'), contactValidation, async 
     },
     body: JSON.stringify({
       from: 'noreply@vegamailer.com',
-      to: 'mail.os-healthcarepro.com',
+      to: 'support@vegamailer.com',
       subject: 'New Contact Form Submission from VegaMailer',
       html: `
         <h2>New Contact Form Submission</h2>

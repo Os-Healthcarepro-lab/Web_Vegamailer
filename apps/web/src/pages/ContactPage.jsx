@@ -147,7 +147,7 @@ const ContactPage = () => {
 
           <div className="mt-12 text-center flex items-center justify-center gap-2 text-muted-foreground">
             <Mail className="h-5 w-5" />
-            <span>Have questions? Email us at <a href="mailto:mail.os-healthcarepro.com" className="text-primary hover:underline">mail.os-healthcarepro.com</a></span>
+            <span>Have questions? Email us at <a href="mailto:support@vegamailer.com" className="text-primary hover:underline">support@vegamailer.com</a></span>
           </div>
         </motion.div>
       </div>

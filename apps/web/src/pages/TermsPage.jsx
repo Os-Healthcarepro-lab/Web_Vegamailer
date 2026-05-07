@@ -71,7 +71,7 @@ const TermsPage = () => {
               <h2 className="text-2xl font-semibold text-foreground mb-4">6. Contact Information</h2>
               <p>
                 If you have any questions about these Terms, please contact us at:{' '}
-                <a href="mailto:mail.os-healthcarepro.com" className="text-primary hover:underline">mail.os-healthcarepro.com</a>
+                <a href="mailto:support@vegamailer.com" className="text-primary hover:underline">support@vegamailer.com</a>
               </p>
             </section>
           </div>
