@@ -11,7 +11,11 @@
     "restart:pm2": "pm2 restart ecosystem.config.js",
     "logs:pm2": "pm2 logs",
     "deploy": "npm run build && echo 'Build complete! Ready to deploy to Hostinger.'",
-    "lint": "concurrently --raw \"npm run lint --prefix apps/web\" \"npm run lint --prefix apps/api\""
+    "lint": "concurrently --raw \"npm run lint --prefix apps/web\" \"npm run lint --prefix apps/api\"",
+    "backup": "powershell -ExecutionPolicy Bypass -File .\\backup.ps1",
+    "backup:compressed": "powershell -ExecutionPolicy Bypass -File .\\backup.ps1 -Compress",
+    "healthcheck": "powershell -ExecutionPolicy Bypass -File .\\healthcheck.ps1",
+    "setup": "powershell -ExecutionPolicy Bypass -File .\\setup.ps1"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

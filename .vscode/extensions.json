@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.powershell",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "github.copilot",
+    "github.copilot-chat",
+    "usernamehw.errorlens",
+    "dsznajder.es7-react-js-snippets"
+  ]
+}

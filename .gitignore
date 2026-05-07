@@ -17,8 +17,13 @@ build/
 .env.development
 *.env
 
+# But keep example files
+!.env.example
+!**/.env.example
+
 # PocketBase data (backup separately!)
 apps/pocketbase/pb_data/
+apps/pocketbase/*.zip
 *.db
 *.db-wal
 *.db-shm
@@ -30,11 +35,13 @@ logs/
 pids/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# Keep VSCode workspace settings
+!.vscode/
 
 # OS
 .DS_Store

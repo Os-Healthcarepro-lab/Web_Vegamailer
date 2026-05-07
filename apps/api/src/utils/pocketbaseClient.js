@@ -3,7 +3,10 @@ dotenv.config();
 import Pocketbase from 'pocketbase';
 import logger from './logger.js';
 
-const POCKETBASE_HOST = `https://${process.env.WEBSITE_DOMAIN}/hcgi/platform`;
+// Use different PocketBase URL for development vs production
+const POCKETBASE_HOST = process.env.NODE_ENV === 'development' 
+    ? `http://${process.env.WEBSITE_DOMAIN}`
+    : `https://${process.env.WEBSITE_DOMAIN}/hcgi/platform`;
 
 async function waitForHealth({ retries = 10, delayMs = 1000 } = {}) {
     for (let i = 1; i <= retries; i++) {
