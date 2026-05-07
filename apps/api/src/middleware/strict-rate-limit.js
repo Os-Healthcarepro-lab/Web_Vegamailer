@@ -16,10 +16,6 @@ export const strictRateLimit = rateLimit({
 		retryAfter: '15 minutes'
 	},
 	validate: { trustProxy: false },
-	// Use IP address as the key
-	keyGenerator: (req) => {
-		return req.ip || req.socket.remoteAddress;
-	},
 });
 
 /**
