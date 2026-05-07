@@ -13,13 +13,14 @@ build/
 # Environment variables
 .env
 .env.local
-.env.production
 .env.development
 *.env
 
-# But keep example files
+# But keep example and production template files
 !.env.example
 !**/.env.example
+!.env.production
+!**/.env.production
 
 # PocketBase data (backup separately!)
 apps/pocketbase/pb_data/
@@ -57,3 +58,6 @@ temp/
 *.backup
 *.bak
 backups/
+
+# Encryption keys
+encryption-key-*.txt

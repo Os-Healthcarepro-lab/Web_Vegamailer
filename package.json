@@ -15,7 +15,9 @@
     "backup": "powershell -ExecutionPolicy Bypass -File .\\backup.ps1",
     "backup:compressed": "powershell -ExecutionPolicy Bypass -File .\\backup.ps1 -Compress",
     "healthcheck": "powershell -ExecutionPolicy Bypass -File .\\healthcheck.ps1",
-    "setup": "powershell -ExecutionPolicy Bypass -File .\\setup.ps1"
+    "setup": "powershell -ExecutionPolicy Bypass -File .\\setup.ps1",
+    "pre-deploy": "powershell -ExecutionPolicy Bypass -File .\\pre-deploy-test.ps1",
+    "generate-key": "powershell -ExecutionPolicy Bypass -File .\\generate-key.ps1"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

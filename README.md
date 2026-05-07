@@ -206,12 +206,35 @@ Add these to your `apps/api/.env` file.
 
 ## 🚀 Production Deployment
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed production deployment instructions for:
-- Hostinger VPS
-- Other cloud providers
-- PM2 configuration
-- Nginx setup
-- SSL certificates
+Ready to deploy to production?
+
+**Quick Commands:**
+```powershell
+# Test if ready for deployment
+npm run pre-deploy
+
+# Generate secure encryption key
+npm run generate-key
+
+# Build for production
+npm run build
+```
+
+**Deployment Guides:**
+- **[PRODUCTION.md](PRODUCTION.md)** - Complete production deployment guide
+- **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** - Step-by-step checklist
+- **[QUICKSTART.md](QUICKSTART.md)** - Quick Hostinger VPS deployment
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Detailed deployment instructions
+
+**Key Steps:**
+1. Update `apps/api/.env.production` with your domain and credentials
+2. Generate a secure 32-character encryption key
+3. Build the frontend: `npm run build`
+4. Deploy to your server (VPS, cloud, or hosting)
+5. Configure Nginx and SSL certificates
+6. Start services with PM2
+
+See [PRODUCTION.md](PRODUCTION.md) for detailed instructions.
 
 ## 🐛 Troubleshooting
 
