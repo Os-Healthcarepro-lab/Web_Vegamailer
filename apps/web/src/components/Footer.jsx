@@ -47,7 +47,7 @@ const Footer = () => {
               <li><Link to="/#features" className="hover:text-primary transition-colors">Features</Link></li>
               <li><Link to="/#how-it-works" className="hover:text-primary transition-colors">How It Works</Link></li>
               <li><Link to="/#comparison" className="hover:text-primary transition-colors">Comparison</Link></li>
-              <li><a href="https://app.os-healthcarepro.com" className="hover:text-primary transition-colors">Pricing</a></li>
+              <li><a href="https://app.vegamailer.com" className="hover:text-primary transition-colors">Pricing</a></li>
             </ul>
           </div>
           

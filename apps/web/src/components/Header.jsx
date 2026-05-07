@@ -58,14 +58,14 @@ const Header = () => {
             className="border-primary/50 text-foreground hover:bg-primary/10 hover:text-primary hover:border-primary transition-all" 
             asChild
           >
-            <a href="https://app.os-healthcarepro.com">Login</a>
+            <a href="https://app.vegamailer.com">Login</a>
           </Button>
           <Button 
             id="btn-signup" 
             className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all" 
             asChild
           >
-            <a href="https://app.os-healthcarepro.com">Get Started</a>
+            <a href="https://app.vegamailer.com">Get Started</a>
           </Button>
         </div>
 
@@ -91,10 +91,10 @@ const Header = () => {
                 ))}
                 <div className="h-px bg-border w-full my-2" />
                 <Button variant="outline" className="w-full border-primary/50 hover:bg-primary/10 hover:text-primary" asChild>
-                  <a href="https://app.os-healthcarepro.com">Login</a>
+                  <a href="https://app.vegamailer.com">Login</a>
                 </Button>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-                  <a href="https://app.os-healthcarepro.com">Get Started</a>
+                  <a href="https://app.vegamailer.com">Get Started</a>
                 </Button>
               </div>
             </SheetContent>

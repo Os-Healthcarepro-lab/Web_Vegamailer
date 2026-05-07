@@ -43,11 +43,13 @@ const VegaMailerLanding = () => {
         <meta property="og:description" content="Professional email marketing platform with your own SMTP or API. No limits, no per-email costs." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vegamailer.com" />
+        <meta property="og:image" content="https://vegamailer.com/og-image.png" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="VegaMailer - Send Unlimited Emails" />
         <meta name="twitter:description" content="Bring your own SMTP or API. No sending limits. Professional email marketing at a fraction of the cost." />
+        <meta name="twitter:image" content="https://vegamailer.com/og-image.png" />
       </Helmet>
 
       {/* 1. HERO SECTION */}
@@ -108,7 +110,7 @@ const VegaMailerLanding = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all group" asChild>
-                <a href="https://app.os-healthcarepro.com">
+                <a href="https://app.vegamailer.com">
                   Start Free Trial <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -475,7 +477,7 @@ const VegaMailerLanding = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto h-14 px-10 text-base bg-white text-primary hover:bg-white/90 shadow-2xl font-semibold transition-all" asChild>
-                <a href="https://app.os-healthcarepro.com">Start Free Trial →</a>
+                <a href="https://app.vegamailer.com">Start Free Trial →</a>
               </Button>
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-10 text-base border-2 border-white/40 text-white hover:bg-white/10 backdrop-blur-sm transition-all" asChild>
                 <a href="/contact">Talk to Sales</a>
