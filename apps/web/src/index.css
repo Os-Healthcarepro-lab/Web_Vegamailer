@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark mode by default as requested */
+    --background: 0 0% 0%; /* Pure black */
+    --foreground: 0 0% 100%; /* White */
+    
+    --card: 215 28% 8%; /* Very dark gray for cards */
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 215 28% 8%;
+    --popover-foreground: 0 0% 100%;
+    
+    /* Primary: Electric Blue #3B82F6 */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Gray #6B7280 */
+    --secondary: 215 14% 47%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 215 28% 15%;
+    --muted-foreground: 215 14% 65%;
+    
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 28% 15%;
+    --input: 215 28% 15%;
+    --ring: 217 91% 60%;
+    
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 215 28% 8%;
+    --card-foreground: 0 0% 100%;
+    --popover: 215 28% 8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 14% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 215 28% 15%;
+    --muted-foreground: 215 14% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 28% 15%;
+    --input: 215 28% 15%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30;
+    font-family: 'Outfit', system-ui, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-balance;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-lg border-b border-white/10;
+  }
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+}

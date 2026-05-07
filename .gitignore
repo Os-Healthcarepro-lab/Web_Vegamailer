@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# PocketBase data (backup separately!)
+apps/pocketbase/pb_data/
+*.db
+*.db-wal
+*.db-shm
+
+# PM2
+.pm2/
+*.pid
+logs/
+pids/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+temp/
+.cache/
+
+# Backups
+*.backup
+*.bak
+backups/
