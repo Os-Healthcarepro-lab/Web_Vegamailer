@@ -29,6 +29,7 @@ export default [
 			'import/no-named-as-default-member': 'off',
 			'import/no-self-import': 'error',
 			'import/no-cycle': 'off',
+			'import/no-unresolved': 'off', // Allow subpath exports like csv-parse/sync
 		},
 	},
 ];
